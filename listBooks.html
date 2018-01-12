@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>List with all books</title>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <script src="lib/browserShims.js"></script>
+        <script src="lib/util.js"></script>
+        <sciprt src="lib/errorTypes.js"></sciprt>
+        <script src="src/ctrl/initialize.js"></script>
+        <script src="src/model/Book.js"></script>
+        <script src="src/view/listBooks.js"></script>
+        <script src="src/ctrl/listBooks.js"></script>
+        <script>
+            window.addEventListener("load", pl.ctrl.listBooks.initialize);
+        </script>
+    </head>
+    <body>
+        <div class="menu-container">
+            <div class="title-container">Library Management System</div>
+                <menu>
+                    <li><a href="listBooks.html"><button type="button"><i class="w3-margin-left material-icons md-18">bookmark</i><span class="button-labels">All Books</span></button></a></li>
+                    <li><a href="createBook.html"><button type="button"><i class="w3-margin-left material-icons md-18">add_circle</i><span class="button-labels">Add a new book</span></button></a></li>
+                    <li><a href="updateBook.html"><button type="button"><i class="w3-margin-left material-icons md-18">loop</i><span class="button-labels">Update a book</span></button></a></li>
+                    <li><a href="deleteBook.html"><button type="button"><i class="w3-margin-left material-icons md-18">delete</i><span class="button-labels">Delete a book</span></button></a></li>
+                    <li><button type="button" onClick="Book.clearData()"><i class="w3-margin-left material-icons md-18">cloud_off</i><span class="button-labels">Clear database</span></button></li>
+                    <li><button type="button" onClick="Book.createTestData"><i class="w3-margin-left material-icons md-18">cloud_upload</i><span class="button-labels">Create test data</span></button></li>
+                </menu>
+                <div class="right-output">
+                        <table id="books">
+                            <thead>
+                                <tr>
+                                    <th>ISBN</th>
+                                    <th>Title</th>
+                                    <th>Year</th>
+                                    <th>Edition</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+            <div class="footer-container"><a href="index.html"><i class="w3-margin-left material-icons md-18" id="footer-icon">home</i><span class="button-labels" id="footer-btn">Back to home</span></a>Powered and developed by <a href="http://www.vladimirpavlov.tk/">Vladimir Pavlov</a></div>
+        </div>
+    </body>
+</html>

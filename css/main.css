@@ -1,0 +1,153 @@
+html,body {
+    background-color: #00e600;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 12vh;
+}
+
+menu {
+    margin-left: 0;
+    padding-left: 0;
+    left: 0;
+    border: 1px solid #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: none;
+    width: 198px;
+    float: left;
+    height: 330px;
+}
+
+menu li {
+    list-style: none;
+    
+}
+
+menu li button {
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #00cc00;
+    color: #fff;
+    border: none;
+    border-right: 1px solid #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+menu li button:hover {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #00b300;
+    outline: none;
+}
+
+.button-labels {
+    margin-left: 5px;
+    float: left;
+    padding-top: 3px;
+}
+
+.material-icons.md-18 {
+    font-size: 20px;
+    vertical-align: -30%;
+    margin-right: 5px;
+    padding-top: 3px;
+    float: left;
+}
+
+.title-container, .footer-container {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #00e600;
+    margin-bottom: 0;
+}
+
+.right-output {
+    height: 215px;
+    border-right: 1px solid #ffffff;
+    padding-right: 20px;
+    padding-left: 230px;
+    padding-top: 110px;
+    text-align: center;
+    vertical-align: center;
+    overflow-y: scroll;
+}
+
+#creation {
+    padding-top: 20px;
+    height: 305px;
+    padding-left: 100px;
+}
+
+#main-icon {
+    font-size: 30px;
+}
+
+input {
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    margin-top: 5px;
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    width: 250px;
+}
+
+button[type=submit], #del-btn{
+    width: 150px;
+    padding: 10px 10px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #00b300;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+}
+
+button[type=submit]:hover, #del-btn:hover {
+    background-color: #00b300;
+    color: #ffffff;
+}
+
+input[type=reset]{
+    width: 150px;
+    padding: 7.5px 10px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #00b300;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    margin-top: none;
+}
+
+input[type=reset]:hover {
+    background-color: #00b300;
+    color: #ffffff;
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid #ff0000;
+}
+
+#footer-btn {
+    font-size: 14px;
+    color: #00e600;
+}
+
+#footer-icon{
+    padding-left: 6px;
+    color: #00e600;
+}
